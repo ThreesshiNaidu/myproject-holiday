@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+
+.section-divider {
+  height: 500px;
+  background-size: cover;
+  background-position: 0% 50%;
+  opacity: 0.75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blackbg-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  letter-spacing: 5px;
+}
+
+.sandwich {
+  margin: 0 20%;
+}
+
+.flex-container{
+  display: flex ;
+  flex-wrap: wrap;
+}
+.p-pic{
+  flex-basis: 50%;
+}
+
+.description{
+  flex-basis: 47%;
+  margin-left: 3%;
+  align-self: center;
+}
+
+/*FLOW*/
+h1,
+h2 {
+  text-align: center;
+}
+
+/*MY LIST*/
+.my-list{
+  flex-basis: 50%;
+}
+
+.beside-list{
+  flex-basis: 50%;
+}
+.column{
+  flex-basis: 25%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+.footer{
+  background-color: maroon;
+  height: 100px;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 50px;
+}
+
+/* IMAGES NOT */
+.Mumbai_Skyline_at_Night {
+  background-image: url("images/Mumbai_Skyline_at_Night.jpg");
+}
+.kolkata {
+  background-image: url("images/kolkata.jpg");
+}
+.jelly {
+  background-image: url("images/indian.jelly.jpg");
+}
+
+img {
+  width: 100%;
+}
+
+.hi-india{
+  background-image: url("images/pongal.png");
+}
+
+/*  Media Query*/
+/*tablets*/
+@media screen and (min-width: 600px ) and (max-width: 800px ){
+  .p-pic{
+    flex-basis: 100%;
+  }
+  
+  .description{
+    flex-basis: 100%;
+  }
+  .my-list{
+    flex-basis: 100%;
+  }
+  
+  .beside-list{
+    flex-basis: 100%;
+  }
+  .column{
+    flex-basis: 50%;
+    padding: 0 4px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 600px){
+  .p-pic{
+    flex-basis: 100%;
+  }
+  
+  .description{
+    flex-basis: 100%;
+  }
+  .my-list{
+    flex-basis: 100%;
+  }
+  
+  .beside-list{
+    flex-basis: 100%;
+  }
+  .column{
+    flex-basis: 100%;
+  }
+}
